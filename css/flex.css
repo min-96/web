@@ -1,0 +1,9 @@
+.container{
+    background-color: beige;
+    display: flex;
+}
+
+.container>div{
+    background-color: blueviolet;
+    border: 1px solid gray;   
+}

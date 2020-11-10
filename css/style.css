@@ -1,0 +1,17 @@
+.header {
+   height: 71px;
+   background-color: slateblue;
+}
+.visual{
+    height: 171px; 
+    background-color: cornflowerblue;
+    
+}
+.body{
+    height: 300px; 
+    background-color: palevioletred;
+}
+.footer{
+    height: 100px;
+    background-color: darksalmon;
+}
