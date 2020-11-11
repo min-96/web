@@ -1,17 +1,57 @@
-.header {
-   height: 71px;
-   background-color: slateblue;
+body{
+    font-size: 2px;
 }
+
+.container{
+    --height: 50em;
+    --width: 50em;
+
+    width: 960px;
+    height: 100%; /* inherit */
+    min-height: inherit;
+    margin-left: auto;
+    margin-right: auto;
+} 
+
+/* ----------------------------------------------- */
+
+.header{
+    height: 71px;
+   
+}
+
+/* ----------------------------------------------- */
+
 .visual{
-    height: 171px; 
-    background-color: cornflowerblue;
+    min-height: 171px;
+    background: #313131 url("../Image/bg-visual.png") no-repeat center ;
+    border-top:3px solid #8CBA34;
+    
+
     
 }
+
 .body{
-    height: 300px; 
-    background-color: palevioletred;
+    min-height: 300px;
+    border-top:3px solid #8CBA34;
+    margin-top: 1px;
+    
 }
+    .body>.container{
+       display: flex; 
+    }
+    .aside{
+        width: 205px;
+        
+    }
+
+    .main{
+        width: 755px;
+        
+    }
+
 .footer{
     height: 100px;
-    background-color: darksalmon;
+    background: #313131;
+    
 }
