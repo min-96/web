@@ -17,12 +17,13 @@
 
 .header{
     height: 71px;
+    background: #8CBA34;
    
 }
 
 /* ----------------------------------------------- */
 
-.visual{
+/* .visual{
     min-height: 171px;
    background: #313131 url("../Image/bg1.jpg") no-repeat center top;
    --background: #313131 url("../Image/bg-visual.png") no-repeat center ;
@@ -32,7 +33,7 @@
     
 
     
-}
+} */
 
 .body{
     min-height: 300px;
