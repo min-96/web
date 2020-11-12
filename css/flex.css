@@ -4,6 +4,16 @@
 }
 
 .container>div{
-    background-color: blueviolet;
+    --flex-basis: 50px;
+    min-width:50px;
+    --flex-grow: 1;
+    flex-shrink: 1;
+    background: blueviolet;
     border: 1px solid gray;   
+}
+.container>div:nth-child(3){
+    flex-grow: 1;
+    --flex-shrink: 1;
+    background: cornflowerblue;
+
 }

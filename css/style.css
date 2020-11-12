@@ -1,6 +1,4 @@
-body{
-    font-size: 2px;
-}
+
 
 .container{
     --height: 50em;
@@ -8,9 +6,11 @@ body{
 
     width: 960px;
     height: 100%; /* inherit */
+    
     min-height: inherit;
     margin-left: auto;
     margin-right: auto;
+    /* background: chocolate; */
 } 
 
 /* ----------------------------------------------- */
@@ -24,8 +24,11 @@ body{
 
 .visual{
     min-height: 171px;
-    background: #313131 url("../Image/bg-visual.png") no-repeat center ;
+   background: #313131 url("../Image/bg1.jpg") no-repeat center top;
+   --background: #313131 url("../Image/bg-visual.png") no-repeat center ;
+   background-attachment: fixed;
     border-top:3px solid #8CBA34;
+    
     
 
     
@@ -36,17 +39,23 @@ body{
     border-top:3px solid #8CBA34;
     margin-top: 1px;
     
+    
 }
     .body>.container{
        display: flex; 
+       background: url("../Image/bg-body.png") repeat-y center;
     }
     .aside{
         width: 205px;
-        
+        background: url("../Image/bg-aside-title.png") no-repeat top;
+        padding-top: 45px;
+       
     }
-
+    
     .main{
         width: 755px;
+        box-sizing: border-box;
+        padding :45px 0px 50px 35px; 
         
     }
 
