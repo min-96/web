@@ -1,0 +1,98 @@
+
+.container {
+    width: 100%;
+    height: 100%; /*inherit은 복리*/ /* 100%와 다르다*/
+    min-height: inherit;
+    margin-right: auto;
+  }
+  
+  .header {
+    height: 71px;
+    background: #313131;
+    display: flex;
+    --justify-content: space-between;
+    
+    color: white;
+
+  }
+
+  .header h1 {
+      font-size: 28px;
+      margin-top: 20px;
+      margin-left: 10px;
+    
+
+  }
+  .header div{
+      display: flex;
+
+  }
+  /* .header h1 {
+    font-size: 28px;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+  .header ul {
+    display: flex;
+    justify-content: center;
+  }
+  .header ul li {
+    /* --margin-right: 18px; */
+    margin-top: 15px;
+    font-size: 17px;
+    justify-content: center;
+    
+    
+  }
+/*-------------------------------------------------*/
+
+.body {
+min-height: 600px;
+background: #ffd476;
+}
+.body > .container {
+display: flex;
+}
+.aside {
+width: 205px;
+display: flex;
+align-items: center;
+justify-content: center;
+background: white;
+}
+.aside .dots {
+display: flex;
+flex-direction: column;
+
+align-items: center;
+margin-left: 50px;
+}
+.aside .dots div {
+width: 10px;
+height: 10px;
+background: white;
+border-radius: 50%;
+margin-top: 20px;
+}
+.main {
+width: 1200px;
+padding: 50px 0px 50px 35px;
+}
+
+
+.footer {
+height: 92px;
+background: #313131;
+}
+.footer .container {
+display: flex;
+align-items: center;
+}
+.footer ul {
+display: flex;
+}
+.footer li {
+color: white;
+margin-left: 50px;
+margin-top: 20px;
+} */
