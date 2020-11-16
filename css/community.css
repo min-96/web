@@ -1,83 +1,74 @@
 
-.container {
-    width: 100%;
-    height: 100%; /*inherit은 복리*/ /* 100%와 다르다*/
-    min-height: inherit;
-    margin-right: auto;
+.d-none{
+  display: none;
+
+}
+.container{
+  --height: 50em;
+  --width: 50em;
+
+  width: 960px;
+  height: 100%; /* inherit */
+  
+  min-height: inherit;
+  margin-left: auto;
+  margin-right: auto;
+  /* background: chocolate; */
+} 
+
+/* ----------------------------------------------- */
+
+.header{
+  height: 71px;
+  --background: #8CBA34;
+ 
+}
+          .main-menu>ul>li{
+              display: flex;
+
+          }
+
+/* ----------------------------------------------- */
+
+.visual{
+  min-height: 171px;
+ --background: #313131 url("../Image/bg1.jpg") no-repeat center top;
+ --background: #313131 url("../Image/bg-visual.png") no-repeat center ;
+ background-attachment: fixed;
+  border-top:3px solid #8CBA34;
+  
+  
+
+  
+} 
+
+.body{
+  min-height: 300px;
+  border-top:3px solid #8CBA34;
+  margin-top: 1px;
+  
+  
+}
+  .body>.container{
+     display: flex; 
+     --background: url("../Image/bg-body.png") repeat-y center;
+  }
+  .aside{
+      width: 205px;
+      --background: url("../Image/bg-aside-title.png") no-repeat top;
+      padding-top: 45px;
+     
   }
   
-  .header {
-    height: 71px;
-    background: #313131;
-    display: flex;
-    --justify-content: space-between;
-    
-    color: white;
-
+  .main{
+      width: 755px;
+      box-sizing: border-box;
+      padding :45px 0px 50px 35px; 
+      
   }
 
-  .header h1 {
-      font-size: 28px;
-      margin-top: 20px;
-      margin-left: 10px;
-      display: flex;
-    
-
-  }
-  .header div{
-      display: flex;
-
-  }
+.footer{
+  height: 100px;
+  background: #313131;
   
-.body {
-min-height: 600px;
-
-
 }
-.body > .container {
-display: flex;
-}
-.aside {
-width: 205px;
-display: flex;
-align-items: center;
-justify-content: center;
-background: white;
-}
-.aside .dots {
-display: flex;
-flex-direction: column;
-
-align-items: center;
-margin-left: 50px;
-}
-.aside .dots div {
-width: 10px;
-height: 10px;
-background: white;
-border-radius: 50%;
-margin-top: 20px;
-}
-.main {
-width: 1200px;
-padding: 50px 0px 50px 35px;
-
-}
-
-
-.footer {
-height: 92px;
-background: #313131;
-}
-.footer .container {
-display: flex;
-align-items: center;
-}
-.footer ul {
-display: flex;
-}
-.footer li {
-color: white;
-margin-left: 50px;
-margin-top: 20px;
-} */
