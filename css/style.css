@@ -1,5 +1,8 @@
 
+.d-none{
+    display: none;
 
+}
 .container{
     --height: 50em;
     --width: 50em;
@@ -17,16 +20,42 @@
 
 .header{
     height: 71px;
-    background: #8CBA34;
+    --background: #8CBA34;
    
 }
+    .main-menu{
+        display: inline-block;
+        font-weight: bold;
+        font-size: 15px;
+        color: darkblue;
+        font-family: "맑은 고딕" ;
+        border: 1px solid olivedrab;
+        --padding-left: 24px;
 
+}
+            .main-menu>ul{
+                display: flex;
+                --padding-left: 24px;
+
+            }
+                    .main-menu>ul a:hover{
+                        color:red;
+                        text-decoration: none;
+                    }
+                        .main-menu>ul>li{
+                            padding-left: 24px;
+                            background: url("../Image/bg-main-menu-vsp.png") no-repeat 12px;
+                        }
+                        .main-menu>ul>li:first-child{
+                            padding-left: 0;
+                            background: unset;
+                        }
 /* ----------------------------------------------- */
 
  .visual{
     min-height: 171px;
-   background: #313131 url("../Image/bg1.jpg") no-repeat center top;
-   --background: #313131 url("../Image/bg-visual.png") no-repeat center ;
+   --background: #313131 url("../Image/bg1.jpg") no-repeat center top;
+   background: #313131 url("../Image/bg-visual.png") no-repeat center ;
    background-attachment: fixed;
     border-top:3px solid #8CBA34;
     
