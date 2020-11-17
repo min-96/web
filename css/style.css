@@ -15,6 +15,13 @@
     margin-right: auto;
     /* background: chocolate; */
 } 
+.img-button{
+    text-indent: -999px;
+    overflow: hidden;
+   border: none;
+    display: inline-block;
+
+}
 
 /* ----------------------------------------------- */
 
@@ -48,14 +55,82 @@
                         }
                         .main-menu>ul>li:first-child{
                             padding-left: 0;
-                            background: unset;
+                            background: none;
                         }
+            .shortcut-menu{
+                
+                display: inline-block;
+               
+            }
+          
+             .shortcut-menu-list{
+                     display: flex;
+                     border: 1px solid black;
+                     font-size: 0px;
+                     
+                        }
+                      
+                        
+                   .shortcut-menu-list .mypage-button{
+                                background : url("../Image/txt-mypage.png") no-repeat center;
+                                width: 72px;
+                                height: 17px;
+                              
+                                        }
+                  .shortcut-menu-list   .customer-button{
+                                background: url("../Image/txt-customer.png") no-repeat center;
+                                
+    width: 72px;
+    height: 17px;
+            
+                         }
+
+    .lecture-form{
+        display: inline-block;
+        border: 5px solid olivedrab;
+    }
+            .lecture-form .find-button{
+                background: url("../Image/btn-zoom.png") no-repeat center;
+                width: 31px;
+                height: 25px;
+                border-left: 1px solid olivedrab;
+
+
+            }
+    .member-menu{
+
+            display: inline-block;
+            font-weight: bold;
+            font-size: 10px;
+            color: #979797;
+            font-family: "맑은 고딕" ;
+            --border: 1px solid olivedrab;
+           --padding-left:9px;
+    
+    }  
+    .member-menu>ul{
+        display: flex;
+       
+
+    }
+    .member-menu>ul>li{
+       
+        padding-left: 9px;
+        background: url("../Image/bg-main-menu-vsp.png") no-repeat 4.5px;
+    }
+
+    .member-menu>ul>li:first-child{
+        padding-left: 0;
+        background: none;
+    }
+
+            
 /* ----------------------------------------------- */
 
  .visual{
     min-height: 171px;
    --background: #313131 url("../Image/bg1.jpg") no-repeat center top;
-   background: #313131 url("../Image/bg-visual.png") no-repeat center ;
+   --background: #313131 url("../Image/bg-visual.png") no-repeat center ;
    background-attachment: fixed;
     border-top:3px solid #8CBA34;
     
