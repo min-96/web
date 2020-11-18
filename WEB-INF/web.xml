@@ -22,6 +22,15 @@
   version="4.0"
   metadata-complete="true">
 
+  <servlet>
+    <servlet-name>n</servlet-name>
+    <servlet-class>Nana</servlet-class>    
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>n</servlet-name>
+    <url-pattern>/newlec</url-pattern>
+  </servlet-mapping>
+
   <display-name>Welcome to Tomcat</display-name>
   <description>
      Welcome to Tomcat

@@ -1,171 +1,294 @@
+        /* h1, li {
+            color: blue;
+        }
 
-.d-none{
-    display: none;
+        .a {
+            color: green;
+        }
 
-}
-.container{
-    --height: 50em;
-    --width: 50em;
+        #a {
+            color: red;
+        }
 
-    width: 960px;
-    height: 100%; /* inherit */
-    
-    min-height: inherit;
-    margin-left: auto;
-    margin-right: auto;
-    /* background: chocolate; */
-} 
-.img-button{
-    text-indent: -999px;
-    overflow: hidden;
-   border: none;
-    display: inline-block;
+        input[type="text"] {
+            background: pink;
+        }
 
-}
+        .input {
+            background: purple;
+        }
 
-/* ----------------------------------------------- */
+        #input {
+            background: green;
+        }
 
-.header{
-    height: 71px;
-    --background: #8CBA34;
-   
-}
-    .main-menu{
-        display: inline-block;
-        font-weight: bold;
-        font-size: 15px;
-        color: darkblue;
-        font-family: "맑은 고딕" ;
-        border: 1px solid olivedrab;
-        --padding-left: 24px;
+        input {
+            background: yellow;
+        } 
 
-}
-            .main-menu>ul{
-                display: flex;
-                --padding-left: 24px;
+        #header>h1~nav {
+            color: orange;
+            --background: yellowgreen;
+        }
 
+        #header>h1+nav+nav {
+            color: tomato;
+        } */
+
+        /* body{
+            font-size: 10px;
+        } */
+
+        .d-none{
+            display: none;
+        }
+
+        .container{
+            --height: 50em;
+            --width: 50em;
+            --background: rgba(255, 0, 0, 0.5);
+            --background: #ff000050;
+            --background: #00000050;
+            width: 960px;
+            height: 100%; /* inherit */
+            min-height: inherit;
+            margin-left: auto;
+            margin-right: auto;
+        } 
+
+        .image-button{
+            text-indent: -999px;
+            overflow: hidden;
+            display: inline-block;
+            border: 0;
+        }
+
+        .aside-menu{
+            font-family: "맑은 고딕", "고딕", Arial, Helvetica, sans-serif;
+            color: #808080;
+            font-weight: bold;
+            font-size: 11px;
+        }    
+
+            .aside-menu h1{
+                font-family: "맑은 고딕", "고딕", sans-serif;
+                font-size: 13px;
+                font-weight: bold;
+                color: #000;
+                padding-left: 26px;
+                background: url(../image/icon-recommend.png) no-repeat left center;
             }
-                    .main-menu>ul a:hover{
-                        color:red;
-                        text-decoration: none;
+
+            .aside-menu li{
+                height: 26px;
+                background: url(../image/bg-aside-menu-hsp.png) no-repeat center bottom;
+                line-height: 26px;
+            }
+
+            .aside-menu li a{
+                padding-left: 26px;
+            }
+            
+            .aside-menu li a.current,
+            .aside-menu li a:hover{
+                background: url(../image/icon-current.png) no-repeat 9px center;
+            }
+
+        /* ----------------------------------------------- */
+
+        .logo {
+            position: absolute;
+            left: 0px;
+            top: 23px;
+        }
+
+        .header{
+            --background: palevioletred;
+            height: 71px;
+        }
+
+            .header>.container>h1{
+                display: inline-block;
+            }
+
+            .header .container{
+                position: relative;
+            }
+
+            .main-menu{
+                display: inline-block;
+                font-family: "맑은 고딕", "고딕", "Arial", sans-serif;
+                font-size: 15px;
+                font-weight: bold;
+                color: #000;
+                /* border: 1px solid red; */
+                position: absolute;
+                left: 200px;
+                top: 27px;
+            }
+
+                .main-menu>ul{
+                    display: flex;
+                }
+                
+                .main-menu>ul>li{
+                    padding-left: 24px;
+                    background: url(../image/bg-main-menu-vsp.png) no-repeat 12px center;
+                }
+
+                .main-menu>ul>li:first-child{
+                    padding-left: initial;
+                    background: none;
+                }
+                
+                .main-menu>ul a:hover{
+                    color: #ff6a00;
+                    text-decoration: none;
+                }
+
+            .shortcut-menu{
+                display: inline-block;
+                position: absolute;
+                right: 0px;
+                top: 40px;
+            }
+            
+                .shortcut-menu-list{
+                    display: flex;
+                    font-size: 0px;
+                }
+
+                    .shortcut-menu-list li{
+                        height: 17px;
                     }
-                        .main-menu>ul>li{
-                            padding-left: 24px;
-                            background: url("../Image/bg-main-menu-vsp.png") no-repeat 12px;
-                        }
-                        .main-menu>ul>li:first-child{
-                            padding-left: 0;
+
+                    /* .shortcut-menu-list li:first-child a{
+                        background: url(../image/txt-mypage.png) no-repeat center;
+                    }
+
+                    .shortcut-menu-list li:nth-child(2) a{
+                        background: url(../image/txt-customer.png) no-repeat center;
+                    } */
+
+                    .shortcut-menu-list .mypage-button{
+                        background: url(../image/txt-mypage.png) no-repeat center;
+                        width: 72px;
+                        height: 17px;
+                    }
+
+                    .shortcut-menu-list .customer-button{
+                        background: url(../image/txt-customer.png) no-repeat center;
+                        width: 72px;
+                        height: 17px;
+                    }
+            
+            .lecture-form{
+                border: 5px solid olivedrab;
+                display: inline-block;
+                position: absolute;
+                left: 468px;
+                top: 21px;
+            }   
+
+                .lecture-form form{
+                    display: flex;
+                    align-items: center;
+                }
+
+                .lecture-form label{
+                    color: #979797;
+                    font-size: 11px;
+                    font-family: "돋움", Arial, Helvetica, sans-serif;
+                    font-weight: bold;
+                    --align-self: center;
+                    line-height: 25px;
+                    --padding-left: 5px;
+                    --padding-right: 5px;
+                    padding: 0px 5px;
+                }
+
+                .lecture-form input[type="text"]{
+                    border: none;
+                    outline: none;
+                }
+
+                .lecture-form .find-button{
+                    background: url(../image/btn-zoom.png) no-repeat center;
+                    width: 31px;
+                    height: 25px;
+                    border-left: 2px solid olivedrab;
+                }
+
+            .member-menu{
+                display: inline-block;
+                font-family: "맑은 고딕", "고딕", "Arial", sans-serif;
+                font-size: 10px;
+                font-weight: bold;
+                color: #979797;
+                position: absolute;
+                right: 0px;
+                top: 20px;
+            }
+                .member-menu>ul{
+                    display: flex;
+                }
+                
+                    .member-menu>ul>li{
+                        padding-left: 9px;
+                        background: url(../image/bg-member-menu-sp.png) no-repeat 4.5px center;
+                    }
+
+                        .member-menu>ul>li:first-child{
+                            padding-left: initial;
                             background: none;
                         }
-            .shortcut-menu{
-                
-                display: inline-block;
-               
+
+        /* ----------------------------------------------- */
+
+        .visual{
+            min-height: 171px;
+            border-top: 3px solid #8CBA34;
+            background: #313131 url("../image/bg-visual.png") no-repeat center;
+        }
+
+        .body{
+            --background: palegreen;
+            min-height: 300px;
+            border-top: 5px solid #8CBA34;
+            margin-top: 1px;
+        }
+
+            .body>.container{
+                display: flex;
+                background: url("../image/bg-body.png") repeat-y center;
             }
-          
-             .shortcut-menu-list{
-                     display: flex;
-                     border: 1px solid black;
-                     font-size: 0px;
-                     
-                        }
-                      
-                        
-                   .shortcut-menu-list .mypage-button{
-                                background : url("../Image/txt-mypage.png") no-repeat center;
-                                width: 72px;
-                                height: 17px;
-                              
-                                        }
-                  .shortcut-menu-list   .customer-button{
-                                background: url("../Image/txt-customer.png") no-repeat center;
-                                
-    width: 72px;
-    height: 17px;
-            
-                         }
 
-    .lecture-form{
-        display: inline-block;
-        border: 5px solid olivedrab;
-    }
-            .lecture-form .find-button{
-                background: url("../Image/btn-zoom.png") no-repeat center;
-                width: 31px;
-                height: 25px;
-                border-left: 1px solid olivedrab;
-
-
+            .aside{
+                --background: purple;
+                width: 205px;
+                background: url("../image/bg-aside-title.png") no-repeat right top;
+                padding-top: 45px;
             }
-    .member-menu{
 
-            display: inline-block;
-            font-weight: bold;
-            font-size: 10px;
-            color: #979797;
-            font-family: "맑은 고딕" ;
-            --border: 1px solid olivedrab;
-           --padding-left:9px;
-    
-    }  
-    .member-menu>ul{
-        display: flex;
-       
+                /* .aside>div{
+                    width: 200px;
+                    height: 100px;
+                    border: 1px solid red;
+                    background: url(../image/logo.png) no-repeat;
+                    --background-size: contain;
+                    background-attachment: fixed;
+                    overflow: scroll;
+                } */
 
-    }
-    .member-menu>ul>li{
-       
-        padding-left: 9px;
-        background: url("../Image/bg-main-menu-vsp.png") no-repeat 4.5px;
-    }
+            .main{
+                --background: gray;
+                width: 755px;
+                box-sizing: border-box;
+                padding: 45px 0px 50px 35px;
+            }              
 
-    .member-menu>ul>li:first-child{
-        padding-left: 0;
-        background: none;
-    }
-
-            
-/* ----------------------------------------------- */
-
- .visual{
-    min-height: 171px;
-   --background: #313131 url("../Image/bg1.jpg") no-repeat center top;
-   --background: #313131 url("../Image/bg-visual.png") no-repeat center ;
-   background-attachment: fixed;
-    border-top:3px solid #8CBA34;
-    
-    
-
-    
-} 
-
-.body{
-    min-height: 300px;
-    border-top:3px solid #8CBA34;
-    margin-top: 1px;
-    
-    
-}
-    .body>.container{
-       display: flex; 
-       background: url("../Image/bg-body.png") repeat-y center;
-    }
-    .aside{
-        width: 205px;
-        background: url("../Image/bg-aside-title.png") no-repeat top;
-        padding-top: 45px;
-       
-    }
-    
-    .main{
-        width: 755px;
-        box-sizing: border-box;
-        padding :45px 0px 50px 35px; 
-        
-    }
-
-.footer{
-    height: 100px;
-    background: #313131;
-    
-}
+        .footer{
+            --background: skyblue;
+            height: 100px;
+            background: #313131;
+        }
