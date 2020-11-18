@@ -10,14 +10,14 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
+    <header id = "header" class = "header">
         <div class ="container">
         <h1><a href="../index.html">logo</a></h1>
         <div>
        
 
         <nav>
-            <h1>메뉴</h1>
+            
             <ul>
                 <li><a href="../user/index.html">회원관리</a></li>
                 <li><a href="../shop/index.html">쇼핑몰</a></li>
@@ -30,21 +30,29 @@
 </div>
 
 <div id= "body" class ="body">
-    <nav id = "aside">
+    <div class ="container">
+        <aside class="aside">
+    <nav>
         <h1>메뉴메뉴</h1>
         <ul>
-            <li><a href="">공지사항관리</a></li>
-            <li><a href="">게시글/댓글관리</a></li>
+            <li>
+                <i class="fas fa-bullhorn"></i>
+                <a href="">공지사항관리</a></li>
+
+            <li>
+                <i class="fas fa-clipboard-list"></i>
+                <a href="">게시글/댓글관리</a></li>
         </ul>
     </nav>
+</aside>
 
     <section>
-        <main id ="main">
+        <main id ="main" class = "main">
          <section>
             <form>
             <h1>신고 게시글 관리</h1>
             <table border="1">
-               
+              
                 <thead>
                     <tr>
                         <td><input type="checkbox" ></td>
@@ -54,6 +62,7 @@
                         <td>등록일</td>
                     </tr>
                 </thead>
+            
                 <tbody>
                     <tr>
                         <td><input type ="checkbox" ></td>
@@ -64,7 +73,7 @@
                     </tr>
                 </tbody>
             </table>
-                <div>
+                <div class = "reg-button">
                 <button>선택한 게시글 삭제</button>
                 </div>
         </form>
@@ -96,17 +105,18 @@
 
                 </thead>
             </table>
-            <div>
+            <div class = "reg-button">
                 <button>선택한 댓글 삭제</button>
             </div>
 
         </form>
     </section>
         </main>
-
     </section>
+    </div>
+</div>
     <section>
-        <footer id="footer">
+        <footer id="footer" class = "footer">
             <h1>푸터푸터푸터</h1>
         </footer>
     </section>
